@@ -1,9 +1,9 @@
 env:
   global:
-    - secure: "qGUXhbQ98wrxYzfdEZ/1NQGyskZmljZSH5zym7/CySmIIHDJlIZOg/i3evz5BWEaRCk8IlzUWu7vnKGjQPchqUpw9R9ptJ4yVs1OspWi19eAM6awe/96Xwt1MzHXwqm81dcokzYLO/3EfebYwjsVP8G/j4pugFHJoZlTKGDgdV95Agf4rPZjUWKnBTWHN+SXx1YIfdQ0xa9IhTc2ISww5qKxrM+kCMulcIDJiS+gDVHLoyNwX0ejjzXjaDdTXPeabwkUumg8AYPzxxSzfQle4Ooc6mNvKhaMLaeSzAyGUeiRuOWU+1JkoEOwexwOtJR8PMv0rhREkFGfy3INYTzcKQqpFpedER1n13Hfl8WCOmpIVT/d51hVuBXTx6GuzeSEavc8VVmLe+ihY9R8OsIh0pYX9m9ybMbasRtrPA+DgItGpWEQkSanFDdfBaCWseoGirkOeJCEjEQcEndKUaIajAZqmU2FxtsM8ZMX3sJkfLMuhSCLSz2LMFZrmDo1xQM6gWl+l7HJCD6tZuK9/GPP2y0VhoyTuAviNU4Be2GBtb8P/PxGDM2s2P252pVvVy92Obsrl2jQtW6zM0gJtX2KaL6Onwpw1OvRCDmfMIsw2Vgn3RxxuUSqjB4Uv7mfraAGDPiYIdQ0TaY+oNmyIKbbOuq/kIirMJUeoitL4vKeQ7w="                     # replace this with the travis encryption output!
+    - secure: "svC6w9V3t7kifmOX1Fx4ahhtKr+PB13WsMPQ4uR0z9ACxl4ZT3av0OmVrGhDYkIjwcHAb1D7t7RpfrmMRF9frO6CSG7JJof5Rfy0Kcqaz/xrYnGF8AiSwlzGmya9bG95QiP66WA9lXIQqzHQM05dI7FktDK1XWNWeaJmc8QryABJFdR4TFxIXZardQdrbsRQ0Z8WUlQD80pgyj0Hvbz7zjzEnTLsmtFmrx3wviaDda1XFvRP2pwBK08zn9rxwojihRC+/5euLTgewrart44WCqzQwb9cghOTNJ6Q+dJ4UyvdIiSY0Chmrs/Y9o9WZGnkl3iEI6LdZC3b4XrVeAytE74LQsbALJEwGUxy1ikhCOFEHHoDV1Rz3kXqmYKKl3o+dWSwv4iBtWhxA8YQST2j43QYb6Rp2OEv0mR10Pu1TXOQUqgt+NfX1csENyO6idUtzn4nb4x9Zf2n5o2cyywYhXlIaJ+PEFVe7QjMe6FMCXu4uJcn4tcMtfE1dwO3bvpEcdE2A2OYbamrj9bIe3Iq00lRh8PMUJhR+zX4yRG+Pcu2Yz8CwBOduPNzZRmhE+GOQt3Y5a9msYbw5xQG7i6O3b05GNCUG2sRssbT4iruXKIHkrJOX8UkQvrNsQemqv0vO/LqIwVmR70xIGoUeN37GyPP0y9V4OPzqVRVYMRTEdw="
     - GIT_DEPLOY_DIR=public             # default output dir of Hugo (change it, when you use configured it!)
     - GIT_DEPLOY_BRANCH=master          # target branch, replace by "gh-pages" for Github Project Pages
-    - GIT_DEPLOY_USERNAME="Sadathossain"   # dummy name
+    - GIT_DEPLOY_USERNAME="Travis CI"   # dummy name
     - GIT_DEPLOY_EMAIL=sadat.hossain@hotmail.com # replace by your email
 
 branches:
