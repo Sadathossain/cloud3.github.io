@@ -1,0 +1,29 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "SadatRocks"
+theme = "kube"
+description = "SadatRocks is the official web address of Sadat Hossain(in2sadt)"
+Paginate = 10
+[Params]
+  RSSLink = "/index.xml"
+  author = "Cloud3" # add your company name
+  github = "Sadathossain" # add your github profile name
+  twitter = "in2sadt" # add your twitter profile
+  email = "sadat.hossain@hotmail.com"
+[params.seo.webmaster_verifications]
+  google = "" # Optional, Google verification code
+  bing = "" # Optional, Bing verification code
+  alexa = "" # Optional, Alexa verification code
+  yandex = "" # Optional, Yandex verification code
+[[menu.main]]
+    name = "Cookbooks"
+    weight = -100
+    url = "/cookbooks/"
+[[menu.main]]
+    name = "Blog"
+    weight = -100
+    url = "/blog/"
+[[menu.main]]
+    name = "Faq"
+    weight = -100
+    url = "/faq/"

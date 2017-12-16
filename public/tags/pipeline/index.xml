@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pipeline on SadatRocks</title>
+    <link>/tags/pipeline/</link>
+    <description>Recent content in Pipeline on SadatRocks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 14 Dec 2017 16:04:18 +0600</lastBuildDate>
+    
+	<atom:link href="/tags/pipeline/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Setting Up Sadatrocks 🌏</title>
+      <link>/blog/setting-up-sadatrocks/</link>
+      <pubDate>Thu, 14 Dec 2017 16:04:18 +0600</pubDate>
+      
+      <guid>/blog/setting-up-sadatrocks/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

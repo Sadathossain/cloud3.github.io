@@ -1,0 +1,60 @@
+{{ define "title"}} {{ .Site.Title}} {{end}}
+{{ define "header"}} {{ partial "header" .}} {{end}}
+{{ define "main"}}
+
+<div id="main">
+  <div id="hero">
+    <h1>{{.Title}}</h1>
+    <p>{{.Description}}</p>
+  </div>
+  <div id="action-buttons">
+    <a class="button primary big" href="https://codeload.github.com/Sadathossain/resume/zip/master" onclick="_gaq.push(['_trackEvent', 'kube', 'download', '1.0']);">Resume</a> <a class="button outline big" href="https://gitprint.com/Sadathossain/resume/blob/master/resume.md" onclick="_gaq.push(['_trackEvent', 'kube', 'github', '1.0.0']);">View on Github</a>
+    <p>Version 1.0.0 from December 7, 2017.<br>
+    It is a Self-generated PDF of my Current Resume</p>
+  </div>
+  <div class="message focus" data-component="message"> <span class="close small"></span>
+    <a class="button inverted small " href="" >SadatRocks </a> from <a href="">Cloud3</a> is an awesome Portfolio Site and I designed this website with <a href="https://gohugo.io">hugo</a> with the same original philosophy !
+  </div>
+  <div id="kube-features">
+    <div class="row gutters">
+      <div class="col col-4 item">
+        <figure>
+          <img alt="Distributed" height="48" src="/img/kube/icon-distributed.png" width="48">
+        </figure>
+        <h3>Distributed</h3>
+        <p>I like to work in a system which is distributed in nature.</p>
+      </div>
+      <div class="col col-4 item">
+        <figure>
+          <img alt="Secured" height="48" src="/img/kube/icon-secured.png" width="48">
+        </figure>
+        <h3>Secured</h3>
+        <p>I like to think security as more of a convention.</p>
+      </div>
+      <div class="col col-4 item">
+        <figure>
+          <img alt="Smart" height="48" src="/img/kube/icon-smart.png" width="48">
+        </figure>
+        <h3>Smart</h3>
+        <p>I believe system should percieve a level of intelligence.</p>
+      </div>
+    </div>
+    <!--<div class="row gutters">
+      <div class="col col-4 item">
+        <h4>Mobile-first Design</h4>
+        <p>Every element in kube is mobile-first and fully embraces latest and greatest tech.</p>
+      </div>
+      <div class="col col-4 item">
+        <h4>Cross-browser</h4>
+        <p>Kube works in all modern browsers, both desktop and mobile, including latest Chrome, Firefox, Safari, Opera, IE and Edge.</p>
+      </div>
+      <div class="col col-4 item">
+        <h4>License</h4>
+        <p>Kube licensed under <a href="http://opensource.org/licenses/MIT">MIT</a>.<br>
+      Kube Framework is absolutely free for personal or commercial use.</p>
+    </div>
+  </div> -->
+</div>
+</div>
+{{ end }}
+{{ define "footer"}} {{ partial "footer" .}} {{end}}
