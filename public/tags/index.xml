@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on SadatRocks</title>
-    <link>cloud3.github.io/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on SadatRocks</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 14 Dec 2017 16:04:18 +0600</lastBuildDate>
     
-	<atom:link href="cloud3.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Hugo</title>
-      <link>cloud3.github.io/tags/hugo/</link>
+      <link>/tags/hugo/</link>
       <pubDate>Thu, 14 Dec 2017 16:04:18 +0600</pubDate>
       
-      <guid>cloud3.github.io/tags/hugo/</guid>
+      <guid>/tags/hugo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Pipeline</title>
-      <link>cloud3.github.io/tags/pipeline/</link>
+      <link>/tags/pipeline/</link>
       <pubDate>Thu, 14 Dec 2017 16:04:18 +0600</pubDate>
       
-      <guid>cloud3.github.io/tags/pipeline/</guid>
+      <guid>/tags/pipeline/</guid>
       <description></description>
     </item>
     
