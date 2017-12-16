@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on SadatRocks</title>
-    <link>/categories/</link>
+    <link>cloud3.github.io/categories/</link>
     <description>Recent content in Categories on SadatRocks</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="cloud3.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Devops</title>
-      <link>/categories/devops/</link>
+      <link>cloud3.github.io/categories/devops/</link>
       <pubDate>Thu, 14 Dec 2017 16:04:18 +0600</pubDate>
       
-      <guid>/categories/devops/</guid>
+      <guid>cloud3.github.io/categories/devops/</guid>
       <description></description>
     </item>
     
