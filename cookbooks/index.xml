@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cookbooks on SadatRocks</title>
-    <link>cloud3.github.io/cookbooks/</link>
+    <link>/cookbooks/</link>
     <description>Recent content in Cookbooks on SadatRocks</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="cloud3.github.io/cookbooks/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/cookbooks/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Github Markdownd Emoji List</title>
-      <link>cloud3.github.io/cookbooks/github-md-emoji-list/</link>
+      <link>/cookbooks/github-md-emoji-list/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>cloud3.github.io/cookbooks/github-md-emoji-list/</guid>
+      <guid>/cookbooks/github-md-emoji-list/</guid>
       <description>People 😄 :smile: 😆 :laughing: 😊 :blush: 😃 :smiley: ☺️ :relaxed: 😏 :smirk: 😍 :heart_eyes: 😘 :kissing_heart: 😚 :kissing_closed_eyes: 😳 :flushed: 😌 :relieved: 😆 :satisfied: 😁 :grin: 😉 :wink: 😜 :stuck_out_tongue_winking_eye: 😝 :stuck_out_tongue_closed_eyes: 😀 :grinning: 😗 :kissing: 😙 :kissing_smiling_eyes: 😛 :stuck_out_tongue: 😴 :sleeping: 😟 :worried: 😦 :frowning: 😧 :anguished: 😮 :open_mouth: 😬 :grimacing: 😕 :confused: 😯 :hushed: 😑 :expressionless: 😒 :unamused: 😅 :sweat_smile: 😓 :sweat: 😥 :disappointed_relieved: 😩 :weary: 😔 :pensive: 😞 :disappointed: 😖 :confounded: 😨 :fearful: 😰 :cold_sweat: 😣 :persevere: 😢 :cry: 😭 :sob: 😂 :joy: 😲 :astonished: 😱 :scream: :neckbeard: :neckbeard: 😫 :tired_face: 😠 :angry: 😡 :rage: 😤 :triumph: 😪 :sleepy: 😋 :yum: 😷 :mask: 😎 :sunglasses: 😵 :dizzy_face: 👿 :imp: 😈 :smiling_imp: 😐 :neutral_face: 😶 :no_mouth: 😇 :innocent: 👽 :alien: 💛 :yellow_heart: 💙 :blue_heart: 💜 :purple_heart: ❤️ :heart: 💚 :green_heart: 💔 :broken_heart: 💓 :heartbeat: 💗 :heartpulse: 💕 :two_hearts: 💞 :revolving_hearts: 💘 :cupid: 💖 :sparkling_heart: ✨ :sparkles: ⭐️ :star: 🌟 :star2: 💫 :dizzy: 💥 :boom: 💥 :collision: 💢 :anger: ❗️ :exclamation: ❓ :question: ❕ :grey_exclamation: ❔ :grey_question: 💤 :zzz: 💨 :dash: 💦 :sweat_drops: 🎶 :notes: 🎵 :musical_note: 🔥 :fire: 💩 :hankey: 💩 :poop: 💩 :shit: 👍 :+1: 👍 :thumbsup: 👎 :-1: 👎 :thumbsdown: 👌 :ok_hand: 👊 :punch: 👊 :facepunch: ✊ :fist: ✌️ :v: 👋 :wave: ✋ :hand: ✋ :raised_hand: 👐 :open_hands: ☝️ :point_up: 👇 :point_down: 👈 :point_left: 👉 :point_right: 🙌 :raised_hands: 🙏 :pray: 👆 :point_up_2: 👏 :clap: 💪 :muscle: 🤘 :metal: 🖕 :fu: 🚶 :walking: 🏃 :runner: 🏃 :running: 👫 :couple: 👪 :family: 👬 :two_men_holding_hands: 👭 :two_women_holding_hands: 💃 :dancer: 👯 :dancers: 🙆 :ok_woman: 🙅 :no_good: 💁 :information_desk_person: 🙋 :raising_hand: 👰 :bride_with_veil: 🙎 :person_with_pouting_face: 🙍 :person_frowning: 🙇 :bow: :couplekiss: :couplekiss: 💑 :couple_with_heart: 💆 :massage: 💇 :haircut: 💅 :nail_care: 👦 :boy: 👧 :girl: 👩 :woman: 👨 :man: 👶 :baby: 👵 :older_woman: 👴 :older_man: 👱 :person_with_blond_hair: 👲 :man_with_gua_pi_mao: 👳 :man_with_turban: 👷 :construction_worker: 👮 :cop: 👼 :angel: 👸 :princess: 😺 :smiley_cat: 😸 :smile_cat: 😻 :heart_eyes_cat: 😽 :kissing_cat: 😼 :smirk_cat: 🙀 :scream_cat: 😿 :crying_cat_face: 😹 :joy_cat: 😾 :pouting_cat: 👹 :japanese_ogre: 👺 :japanese_goblin: 🙈 :see_no_evil: 🙉 :hear_no_evil: 🙊 :speak_no_evil: 💂 :guardsman: 💀 :skull: 🐾 :feet: 👄 :lips: 💋 :kiss: 💧 :droplet: 👂 :ear: 👀 :eyes: 👃 :nose: 👅 :tongue: 💌 :love_letter: 👤 :bust_in_silhouette: 👥 :busts_in_silhouette: 💬 :speech_balloon: 💭 :thought_balloon:</description>
     </item>
     
     <item>
       <title>SadatRocks-animation</title>
-      <link>cloud3.github.io/cookbooks/sadatrocks-animation/</link>
+      <link>/cookbooks/sadatrocks-animation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>cloud3.github.io/cookbooks/sadatrocks-animation/</guid>
+      <guid>/cookbooks/sadatrocks-animation/</guid>
       <description>Slide slideUp   slideDown   Slide Up Slide Down $(&amp;rsquo;#element&amp;rsquo;).animation(&amp;lsquo;slideUp&amp;rsquo;); $(&amp;rsquo;#element&amp;rsquo;).animation(&amp;lsquo;slideDown&amp;rsquo;);  Fade fadeIn   fadeOut   Fade In Fade Out $(&amp;rsquo;#element&amp;rsquo;).animation(&amp;lsquo;fadeIn&amp;rsquo;); $(&amp;rsquo;#element&amp;rsquo;).animation(&amp;lsquo;fadeOut&amp;rsquo;);  Flip flipIn   flipOut   Flip In Flip Out $(&amp;rsquo;#element&amp;rsquo;).animation(&amp;lsquo;flipIn&amp;rsquo;); $(&amp;rsquo;#element&amp;rsquo;).animation(&amp;lsquo;flipOut&amp;rsquo;);  Zoom zoomIn   zoomOut   Zoom In Zoom Out $(&amp;rsquo;#element&amp;rsquo;).animation(&amp;lsquo;zoomIn&amp;rsquo;); $(&amp;rsquo;#element&amp;rsquo;).animation(&amp;lsquo;zoomOut&amp;rsquo;);  Rotate rotate   Rotate $(&amp;rsquo;#element&amp;rsquo;).animation(&amp;lsquo;rotate&amp;rsquo;);  Shake shake   Shake $(&amp;rsquo;#element&amp;rsquo;).animation(&amp;lsquo;shake&amp;rsquo;);  Pulse pulse   Pulse $(&amp;rsquo;#element&amp;rsquo;).</description>
     </item>
     

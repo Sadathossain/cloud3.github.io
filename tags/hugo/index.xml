@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugo on SadatRocks</title>
-    <link>cloud3.github.io/tags/hugo/</link>
+    <link>/tags/hugo/</link>
     <description>Recent content in Hugo on SadatRocks</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 14 Dec 2017 16:04:18 +0600</lastBuildDate>
     
-	<atom:link href="cloud3.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Setting Up Sadatrocks 🌏</title>
-      <link>cloud3.github.io/blog/setting-up-sadatrocks/</link>
+      <link>/blog/setting-up-sadatrocks/</link>
       <pubDate>Thu, 14 Dec 2017 16:04:18 +0600</pubDate>
       
-      <guid>cloud3.github.io/blog/setting-up-sadatrocks/</guid>
+      <guid>/blog/setting-up-sadatrocks/</guid>
       <description></description>
     </item>
     

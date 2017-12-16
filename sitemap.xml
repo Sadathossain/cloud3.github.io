@@ -3,75 +3,75 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>cloud3.github.io/blog/setting-up-sadatrocks/</loc>
+    <loc>/blog/setting-up-sadatrocks/</loc>
     <lastmod>2017-12-14T16:04:18+06:00</lastmod>
   </url>
   
   <url>
-    <loc>cloud3.github.io/cookbooks/github-md-emoji-list/</loc>
+    <loc>/cookbooks/github-md-emoji-list/</loc>
   </url>
   
   <url>
-    <loc>cloud3.github.io/cookbooks/sadatrocks-animation/</loc>
+    <loc>/cookbooks/sadatrocks-animation/</loc>
   </url>
   
   <url>
-    <loc>cloud3.github.io/blog/</loc>
-    <lastmod>2017-12-14T16:04:18+06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>cloud3.github.io/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>cloud3.github.io/company/</loc>
-  </url>
-  
-  <url>
-    <loc>cloud3.github.io/cookbooks/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>cloud3.github.io/categories/devops/</loc>
+    <loc>/blog/</loc>
     <lastmod>2017-12-14T16:04:18+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>cloud3.github.io/faq/</loc>
+    <loc>/categories/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>cloud3.github.io/tags/hugo/</loc>
+    <loc>/company/</loc>
+  </url>
+  
+  <url>
+    <loc>/cookbooks/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/devops/</loc>
     <lastmod>2017-12-14T16:04:18+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>cloud3.github.io/password-recovery/</loc>
+    <loc>/faq/</loc>
   </url>
   
   <url>
-    <loc>cloud3.github.io/tags/pipeline/</loc>
+    <loc>/tags/hugo/</loc>
     <lastmod>2017-12-14T16:04:18+06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>cloud3.github.io/</loc>
+    <loc>/password-recovery/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/pipeline/</loc>
+    <lastmod>2017-12-14T16:04:18+06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/</loc>
     <lastmod>2017-12-14T16:04:18+06:00</lastmod>
   </url>
   
   <url>
-    <loc>cloud3.github.io/account/</loc>
+    <loc>/account/</loc>
   </url>
   
   <url>
-    <loc>cloud3.github.io/tags/</loc>
+    <loc>/tags/</loc>
     <lastmod>2017-12-14T16:04:18+06:00</lastmod>
     <priority>0</priority>
   </url>
