@@ -1,2 +1,2 @@
 # cloud3.github.io
-SadatRocks
+[![Build Status](https://travis-ci.org/Sadathossain/cloud3.github.io.svg?branch=sources)](https://travis-ci.org/Sadathossain/cloud3.github.io)
