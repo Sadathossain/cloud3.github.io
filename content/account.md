@@ -3,7 +3,7 @@ title = "Sign In"
 +++
 <form action="" data-component="validate" method="post" class="form form-centered"><input type="hidden" name="authorize-token" value="">
     <div class="message error" data-component="message"> <span class="close small"></span>
-      💀<p>YOU SHALL NOT PASS</p><a class="button inverted small " href="/" >GOBACK</a>
+      💀<p>YOU SHALL NOT PASS</p><a class="button inverted small " href="/cloud3.github.io/" >GOBACK</a>
     </div>
 
     <div class="form-item">
