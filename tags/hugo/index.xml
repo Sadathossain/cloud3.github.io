@@ -17,7 +17,9 @@
       <pubDate>Thu, 14 Dec 2017 16:04:18 +0600</pubDate>
       
       <guid>/cloud3.github.io/blog/setting-up-sadatrocks/</guid>
-      <description></description>
+      <description>Prologue SadatRocks is my platform for writing blogs and manage my cookbooks. I love 💝 hugo, which is The world’s fastest framework for building websites. So I used kube as a theme to develop SadatRocks with hugo.
+Then I need to come up with a plan for building a pipeline for SadatRocks.
+The plan I am going to use User/Organization Page strategy here for hosting my static files with github.</description>
     </item>
     
   </channel>
