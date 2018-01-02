@@ -9,7 +9,7 @@
   <title> Setting Up Sadatrocks 🌏 </title>
 
   
-  <meta name="description" content="How to setup SadatRocks"> 
+  <meta name="description" content="Building a pipeline for SadatRocks"> 
   
   
   
@@ -22,7 +22,7 @@
 
 
   <meta property="og:title" content="Setting Up Sadatrocks 🌏" />
-<meta property="og:description" content="How to setup SadatRocks" />
+<meta property="og:description" content="Building a pipeline for SadatRocks" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/cloud3.github.io/blog/setting-up-sadatrocks/" />
 
@@ -116,26 +116,26 @@
 <div class="push-center" itemscope itemtype="http://schema.org/BlogPosting">
     
 <meta itemprop="name" content="Setting Up Sadatrocks 🌏">
-<meta itemprop="description" content="How to setup SadatRocks">
+<meta itemprop="description" content="Building a pipeline for SadatRocks">
 
 
 <meta itemprop="datePublished" content="2017-12-14T16:04:18&#43;06:00" />
 <meta itemprop="dateModified" content="2017-12-14T16:04:18&#43;06:00" />
-<meta itemprop="wordCount" content="0">
+<meta itemprop="wordCount" content="629">
 
 
 
-<meta itemprop="keywords" content="hugo,pipeline," />
+<meta itemprop="keywords" content="hugo,travis-ci,pipeline," />
 
 <div id="hero">
     <h1 itemprop="headline">  Setting Up Sadatrocks 🌏</h1>
     
-<blockquote itemprop="description">How to setup SadatRocks</blockquote>
+<blockquote itemprop="description">Building a pipeline for SadatRocks</blockquote>
 
 <time class="post-time"><span class="icon">
   <i class="fa fa-clock-o" aria-hidden="true"></i>
 </span>
-<span>0 minute read</span>
+<span>3 minute read</span>
 <span class="icon">
  <i class="fa fa-pencil" aria-hidden="true"></i>
 </span>
@@ -148,6 +148,134 @@
 <div id="post" itemprop="articleBody">
 
     
+
+<h1 id="prologue">Prologue</h1>
+
+<p>SadatRocks is my platform for writing blogs and manage my cookbooks. I love 💝
+<a href="http://gohugo.io/">hugo</a>, which is The world’s fastest framework for building
+websites. So I used <a href="https://github.com/jeblister/kube">kube</a> as a theme to
+develop SadatRocks with hugo.</p>
+
+<p>Then I need to come up with a plan for building a pipeline for SadatRocks.</p>
+
+<h1 id="the-plan">The plan</h1>
+
+<p>I am going to use User/Organization Page strategy here for hosting my static
+files with github. So I have to put my files into a branch named other than
+master, which in my case happens to be <code>sources</code>.</p>
+
+<p>On my code push to <code>sources</code> will trigger a build with <a href="travis-ci.org">Travis CI</a>,
+which will then build my static files and place it into fresh <code>master</code>.</p>
+
+<p>Last I need to copy my .travis.yml and README.md files to my <code>master</code> branch.</p>
+
+<h1 id="deployment">Deployment</h1>
+
+<p>I am deploying a directory as a git branch. So I am going to use a script developed
+by <a href="https://github.com/X1011">dan smith</a> for this purpose.</p>
+
+<p>To get the script and change it&rsquo;s permissions we need to run the following in project
+root directory</p>
+
+<pre><code class="language-shell">$ wget https://github.com/X1011/git-directory-deploy/raw/master/deploy.sh &amp;&amp; chmod +x deploy.sh
+</code></pre>
+
+<h1 id="token-generation-and-encryption">Token generation and Encryption</h1>
+
+<p>Next we need to generate a token for our github repo with <code>public_repo</code> or <code>repo</code>
+scope and Token description as <code>&lt;ORGANIZATION&gt;.github.io</code> from <a href="https://github.com/settings/tokens">here</a>.</p>
+
+<p>Now that we have our token, we need to encrypt it with travis-ci. For that purpose
+we need travis on our workstation. I am using <code>ruby 2.4.1p111 (2017-03-22 revision 58053) [x64-mingw32]</code></p>
+
+<p>To install Travis</p>
+
+<pre><code class="language-shell">$ gem install travis
+$ travis version
+</code></pre>
+
+<p>I am using <code>1.8.8</code>. To encrypt the token and add it your project .travis.yml
+file, run the following command in the project root directory</p>
+
+<pre><code class="language-shell">$ travis encrypt GIT_DEPLOY_REPO=https://&lt;TOKEN&gt;@github.com/&lt;USERNAME&gt;/&lt;REPO&gt;.git --add
+</code></pre>
+
+<h1 id="setup-travis-yml">Setup .travis.yml</h1>
+
+<p>Setup your .travis.yml file with the following code and change where appropriate</p>
+
+<pre><code class="language-sh">env:  
+  global:
+    - secure: &quot;...&quot;                     # replace this with the travis encryption output!
+    - GIT_DEPLOY_DIR=public             # default output dir of Hugo (change it, when you use configured it!)
+    - GIT_DEPLOY_BRANCH=master          # target branch, replace by &quot;gh-pages&quot; for Github Project Pages
+    - GIT_DEPLOY_USERNAME=&quot;Travis CI&quot;   # dummy name
+    - GIT_DEPLOY_EMAIL=user@example.com # replace by your email
+
+branches:
+  only:
+    - sources                           # for Github Project Pages replace with &quot;master&quot;
+
+install:  
+  - rm -rf public || exit 0             # cleanup previous run
+script:  
+  - binaries/hugo                       # Generate
+after_success:  
+  - cp .travis.yml public               # all branches need this file
+  - cp README.md public                 # copy readme
+  - bash deploy.sh                      # run the deploy
+</code></pre>
+
+<h1 id="configuring-travis-ci">Configuring Travis-CI</h1>
+
+<p>Now we have to tell Travis which repository should be build. Login to Travis-CI and
+change our repo general settings tab as Build only if .travis.yml present, build
+pushes and Build pull requests as <b>ON</b>. Put Limit concurrent jobs as <b>OFF</b>.</p>
+
+<h1 id="hugo-binary">Hugo binary</h1>
+
+<p>One could simply advise Travis CI to install Hugo during the website build. But
+a much more elegant way is to cross compile the Hugo binary ourselves and then
+deploy it in the <code>sources</code> branch. This will also speedup the build.</p>
+
+<p>Run the following command on project root directory. I am using go version
+<code>go1.9.2 windows/amd64</code>.</p>
+
+<pre><code class="language-shell">$ mkdir binaries &amp;&amp; cd binaries
+$ env GOPATH=&quot;`pwd`&quot; go get -v github.com/spf13/hugo
+$ env GOPATH=&quot;`pwd`&quot; GOOS=linux GOARCH=amd64 go build -v github.com/spf13/hugo
+</code></pre>
+
+<p>Now we can delete 💀 other source packages from <code>binaries</code> folder and we may
+need to change our permission for the hugo binary as executable with</p>
+
+<pre><code class="language-shell">$ git update-index --add --chmod=+x binaries/hugo
+</code></pre>
+
+<h1 id="wrapping-up">Wrapping up</h1>
+
+<p>Final folder structure should be as follows</p>
+
+<pre><code class="language-sh">├── [archetypes]
+├── [binaries]
+    └── hugo
+├── [content]
+├── [data]
+├── [layouts]
+├── [static]
+├── [themes]
+├── config.toml
+├── deploy.sh
+├── .travis.yml
+└── README.md
+</code></pre>
+
+<p>Now with my every push to <code>sources</code> Travis-CI should run and generate static
+HTML and push it back to our <code>master</code> branch. The results should be visible
+on our GitHub Page.</p>
+
+<p>So that&rsquo;s how I build the pipeline for SadatRocks. ✌️</p>
+
 
 </div>
 
@@ -189,9 +317,9 @@
     in <span itemprop="articleSection"><a href="/categories/devops/">devops</a></span>
   
   
-    and tagged <a href="/tags/hugo/">hugo</a> and <a href="/tags/pipeline/">pipeline</a>
+    and tagged <a href="/tags/hugo/">hugo</a>, <a href="/tags/pipeline/">pipeline</a> and <a href="/tags/travis-ci/">travis-ci</a>
   
-  using <span itemprop="wordCount">0</span> words.
+  using <span itemprop="wordCount">629</span> words.
 </p>
 
         
