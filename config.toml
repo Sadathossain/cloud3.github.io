@@ -11,10 +11,9 @@ Paginate = 10
   twitter = "in2sadt" # add your twitter profile
   email = "sadat.hossain@hotmail.com"
 [params.seo.webmaster_verifications]
-  google = "" # Optional, Google verification code
-  bing = "" # Optional, Bing verification code
-  alexa = "" # Optional, Alexa verification code
-  yandex = "" # Optional, Yandex verification code
+  google = "UA-33535265-6" # Optional, Google verification code
+  bing = "C44E72A3112D10E72976633D1ECE9070" # Optional, Bing verification code
+  yandex = "3d45d40b94a66eb3" # Optional, Yandex verification code
 [[menu.main]]
     name = "Cookbooks"
     weight = -100
